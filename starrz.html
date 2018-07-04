@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style rel="stylesheet" type="text/css">
+            body{
+                font-size: 30px;
+                }
+
+            .check{
+                color: goldenrod;    
+                }
+            
+            #di1{
+                width: 50%;
+                }
+        </style>
+
+    </head>
+
+    <body>
+                    <span id="s1" onclick="t1()"> &#x2605 </span>
+                    <span id="s2" onclick="t2()"> &#x2605 </span>
+                    <span id="s3" onclick="t3()"> &#x2605 </span>
+                    <span id="s4" onclick="t4()"> &#x2605 </span>
+                    <span id="s5" onclick="t5()"> &#x2605 </span>
+                    <span id="s11"></span>
+            <script>
+            function t1(){
+                document.getElementById("s11").innerHTML = "Poor";
+                document.getElementById("s1").style.color = "goldenrod";
+                document.getElementById("s2").style.color = "black";
+                document.getElementById("s3").style.color = "black";
+                document.getElementById("s4").style.color = "black";
+                document.getElementById("s5").style.color = "black";
+                
+            }
+
+            function t2(){
+                document.getElementById("s11").innerHTML = "Below  Average";                
+                document.getElementById("s2").style.color = "goldenrod";
+                document.getElementById("s3").style.color = "black";
+                document.getElementById("s4").style.color = "black";
+                document.getElementById("s5").style.color = "black";
+            }
+            
+            function t3(){
+                document.getElementById("s11").innerHTML = "Average";                
+                document.getElementById("s3").style.color = "goldenrod";                
+                document.getElementById("s4").style.color = "black";
+                document.getElementById("s5").style.color = "black";
+            }
+
+            function t4(){
+                document.getElementById("s11").innerHTML = "Above Average";                
+                document.getElementById("s4").style.color = "goldenrod";                
+                document.getElementById("s5").style.color = "black";
+            }
+
+            function t5(){
+                document.getElementById("s11").innerHTML = "Excellent";                
+                document.getElementById("s5").style.color = "goldenrod";                
+            }
+            </script>        
+    </body>
+</html>
